@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo.module.web:war exploded">
+    <output-path>$PROJECT_DIR$/../demo.module.web/target/demo.module.web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo.module.web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="demo.module.api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="demo.module.api" />
+          </element>
+          <element id="archive" name="demo.module.impl-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="demo.module.impl" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../demo.module.web/target/demo.module.web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="demo.module.web/web/Web" />
+    </root>
+  </artifact>
+</component>
